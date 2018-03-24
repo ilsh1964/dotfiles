@@ -2,3 +2,4 @@
 ## .bashrc
 ## .vim
 ## .tmux
+## .i3
