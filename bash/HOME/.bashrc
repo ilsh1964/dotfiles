@@ -1,4 +1,4 @@
-# .BASHRC HOME-PC  version 1.0 (2018-03-24)
+# .BASHRC HOME-PC  Version 1.2 (2018-04-01)
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -49,6 +49,10 @@ alias ll='ls -lhF'
 alias llh='ls -lhAF'
 alias lk="ps -aef |grep -v grep | grep -i "
 alias path="echo $PATH"
+alias ls='ls --color=auto'
+alias grep='grep --colour=auto'
+alias egrep='egrep --colour=auto'
+alias fgrep='fgrep --colour=auto'
 
 # UTILS
 alias top10='du -ks * | sort -nr | head -10'

@@ -1,4 +1,4 @@
-# .BASHRC HOME-MANJARO-I3  version 1.0 (2018-03-24)
+# .BASHRC I3-MANJARO Version 1.2 (2018-04-01)
 
 [[ $- != *i* ]] && return
 
@@ -90,7 +90,7 @@ unset use_color safe_term match_lhs sh
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/Bin" ] ; then
-    PATH="$HOME/Bin:/opt/lampp/bin:$PATH"
+    PATH="$HOME/Bin:$PATH"
 fi
 
 # EXPORTS
@@ -119,7 +119,7 @@ alias he='export LANG=he_IL.UTF8'
 alias update='sudo pacman -Syu'
 alias install='sudo pacman -S '
 alias search='pacman -Ss '
-alias purge='sudo pacman -R '
+alias purge='sudo pacman -Rs '
 
 # SHORTCUTS
 alias nas='ssh pi@10.0.0.100'
@@ -133,6 +133,8 @@ alias dro='cd ~/Dropbox'
 alias i3='cd ~/.i3'
 alias youtubedl-download-mp3='youtube-dl -x --audio-format "mp3" --audio-quality "0" '
 alias youtubedl-upgrade='wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl'
+alias heb="setxkbmap -option 'grp:alt_shift_toggle'"
+
 xhost +local:root > /dev/null 2>&1
 
 complete -cf sudo
