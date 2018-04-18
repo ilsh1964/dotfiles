@@ -1,4 +1,4 @@
-# .BASHRC I3-MANJARO Version 1.2 (2018-04-01)
+# .BASHRC         MANJARO         VER: 2.0 (2018-04-18)
 
 [[ $- != *i* ]] && return
 
@@ -88,52 +88,16 @@ fi
 
 unset use_color safe_term match_lhs sh
 
-# set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/Bin" ] ; then
     PATH="$HOME/Bin:$PATH"
 fi
 
-# EXPORTS
 export EDITOR=vim
 
-alias df='df -h'                          # human-readable sizes
-alias free='free -m'                      # show sizes in MB
-alias more=less
-alias h=history                     # show the history of commands issued
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
-alias ll='ls -lhF'
-alias llh='ls -lhAF'
-alias lk="ps -aef |grep -v grep | grep -i "
-alias path="echo $PATH"
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
 
-# UTILS
-alias top10='du -ks * | sort -nr | head -10'
-alias vimrc='grep VIMRC ~/.vimrc'
-alias bashrc='grep .BASHRC ~/.bashrc |grep -v alias'
-alias en='export LANG=en_US.UTF8'
-alias he='export LANG=he_IL.UTF8'
-
-#PACMAN
-alias update='sudo pacman -Syu'
-alias install='sudo pacman -S '
-alias search='pacman -Ss '
-alias purge='sudo pacman -Rs '
-
-# SHORTCUTS
-alias nas='ssh pi@10.0.0.100'
-alias web='ssh pi@10.0.0.99'
-alias doc='cd ~/Documents'
-alias dow='cd ~/Downloads'
-alias mus='cd ~/Music'
-alias vid='cd ~/Videos'
-alias pic='cd ~/Pictures'
-alias dro='cd ~/Dropbox'
-alias i3='cd ~/.i3'
-alias youtubedl-download-mp3='youtube-dl -x --audio-format "mp3" --audio-quality "0" '
-alias youtubedl-upgrade='wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl'
-alias heb="setxkbmap -option 'grp:alt_shift_toggle'"
 
 xhost +local:root > /dev/null 2>&1
 

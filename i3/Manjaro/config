@@ -39,6 +39,7 @@ bindsym $mod+d exec ulauncher
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
 
+
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
@@ -59,9 +60,9 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-bindsym Ctrl+Shift+w exec google-chrime-stable
+bindsym Ctrl+Shift+w exec google-chrome-stable
 bindsym Ctrl+Shift+c exec galculator
-bindsym Ctrl+Shift+f exec ranger
+bindsym Ctrl+Shift+r exec terminal -e ranger
 bindsym $mod+Shift+f exec gksu pcmanfm
 bindsym Ctrl+Shift+m exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
@@ -153,14 +154,14 @@ bindsym $mod+Ctrl+Left workspace prev
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
-set $ws1 "1:Chrome"
-set $ws2 "2:FM"
-set $ws3 "3:T1"
-set $ws4 "4:T2"
+set $ws1 1:Chrome
+set $ws2 2:T1
+set $ws3 3:Ranger
+set $ws4 4:PCMAN
 set $ws5 5
-set $ws6 6
+set $ws6 6:CherryTree
 set $ws7 7
-set $ws8 8
+set $ws8 8:Firefox
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -196,6 +197,8 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 # assign [class="Thunderbird"] $ws1
 assign [class="Google-chrome"] $ws1
 assign [class="Cherrytree"] $ws6
+assign [class="Firefox"] $ws8
+#assign [class="URxvt"] $ws3
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
@@ -293,8 +296,8 @@ exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 exec --no-startup-id ulauncher
-exec --no-startup-id google-chrome-stable
-exec --no-startup-id ranger
+exec google-chrome-stable
+exec terminal -e ranger
 exec --no-startup-id dropbox
 exec --no-startup-id "setxkbmap -layout us,il"
 exec --no-startup-id "setxkbmap -option 'grp:alt_shift_toggle'"

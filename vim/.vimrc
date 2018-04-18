@@ -1,4 +1,4 @@
-" VIMRC Version: 2.0 --- 2018-02-02 "
+" VIMRC           MINT         VER: 2.0 (2018-04-18) "
 " ============================================================================
 " VUNDLE PLUGIN
 set nocompatible              " be iMproved, required
@@ -113,7 +113,7 @@ autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 
 "set t_Co=256
-colorscheme evening
+colorscheme desert
 
 " Showing line numbers and length
 set number  " show line numbers
