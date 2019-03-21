@@ -1,4 +1,4 @@
-# .BASHRC         PI         VER: 2.0 (2018-04-18)
+# .BASHRC         PI         VER: 3.1 (2019-03-21)
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -109,3 +109,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+set -o vi

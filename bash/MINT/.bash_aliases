@@ -19,6 +19,7 @@ alias bashrc='grep .BASHRC ~/.bashrc'
 alias bash_aliases='grep BASH_ALIASES .bash_aliases |grep -v aliases'
 alias en='export LANG=en_US.UTF8'
 alias he='export LANG=he_IL.UTF8'
+alias heb="setxkbmap -layout us,il && setxkbmap -option 'grp:alt_shift_toggle'"
 
 # APT
 alias update='sudo apt update'
