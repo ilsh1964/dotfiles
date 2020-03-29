@@ -1,5 +1,7 @@
-# My dotfiles:
-## .bashrc
-## .vim
-## .tmux
-## .i3
+# dotfiles
+
+#### My personal dotfiles:
+- .bashrc
+- .vim
+- .tmux
+- .i3

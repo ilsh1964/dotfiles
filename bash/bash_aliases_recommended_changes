@@ -54,3 +54,9 @@ alias html='cd /var/www/html'
 alias youtubedl-download-mp3='youtube-dl -x --audio-format "mp3" --audio-quality "0" '
 alias youtubedl-upgrade='wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl'
 alias rclone_all='rclone -v --log-file /home/$USER/rclone.log copy /SOURCE_DIR/ remote:Rclone/DEST_BIR/'
+
+# GIT
+alias gs='git status'
+alias gc='git commit -m '
+alias ga='git add -A'
+alias gp='git push origin master'
