@@ -1,4 +1,4 @@
-" VIMRC           MINT         VER: 3.0 (2019-03-27) "
+" VIMRC           MINT         VER: 4.0 (2020-04-01) "
 " ============================================================================
 " VUNDLE PLUGIN
 set nocompatible              " be iMproved, required
@@ -12,38 +12,26 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 
-" Supertab plugin
+" Supertab plugin (press TAB will give suggestions...)
 Plugin 'ervandew/supertab'
 
-" WriteBackup Plugin
-Plugin 'vim-scripts/writebackup'
-
-" SearchComplete Plugin
-Plugin 'vim-scripts/SearchComplete'
-
-" NerdTree Plugin
+" NerdTree Plugin - Ctl+n to open NerdTree
 Plugin 'scrooloose/nerdtree'
 
-" CTRL+P Plugin
-Plugin 'ctrlp.vim'
-
-" Syntax checker Plugin
+" Python Syntax checker (inc REP-8 support)
 Plugin 'scrooloose/syntastic'
 
-" Powerline
-Plugin 'powerline/powerline'
+" Lightline - Nice colorfull status line
+Plugin 'itchyny/lightline.vim'
 
-" SimpylFold
+" SimpylFold - Fold block of code
 Plugin 'tmhedberg/SimpylFold'
 set foldmethod=indent
 
-" jedi-vim
+" jedi-vim - Python 2.7+  auto-complete: os.(will give you suggestion)
 Plugin 'davidhalter/jedi-vim'
 
-" Javascript support
-Plugin 'jelera/vim-javascript-syntax'
-
-" delimitMate
+" delimitMate - Automatic close ",(,[...
 Plugin 'delimitMate.vim'
 
 call vundle#end()
@@ -157,6 +145,8 @@ set wildignore+=*/coverage/*
 nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 
+" NerdTree
+nmap <C-n> :NERDTreeToggle<CR>
 
 set ruler " Always show current positions along the bottom
 set wildmenu " turn on wild menu
