@@ -1,5 +1,5 @@
-" VIMRC           MINT         VER: 4.0 (2020-04-01) "
-" ============================================================================
+" VIMRC                    VER: 4.0 (2020-04-05) "
+" ================================================
 " VUNDLE PLUGIN
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -33,6 +33,26 @@ Plugin 'davidhalter/jedi-vim'
 
 " delimitMate - Automatic close ",(,[...
 Plugin 'delimitMate.vim'
+
+" Surround
+"  BASIC USAGE:
+"    ds" - delete surround " (left+right)
+"    cs'" - change surround ' to "
+"    yss' - you surround the whole line with '
+"    yss<HTML TAG> - surround the whole line with HTML TAGS
+"    ysas' - you surround the whole sentence '
+"    ysiw' - you surround - surround the word with '
+"  VISUAL MODE:
+"    select area, S' sorround the area with '
+Plugin 'tpope/vim-surround'
+
+" T-Comment
+Plugin 'tomtom/tcomment_vim'
+" USAGE:
+"  BASIC USAGE:
+"    gcc - comment\uncomment the whole line
+"  VISUAL USAGE:
+"    gc - comment\uncomment the whole region
 
 call vundle#end()
 filetype plugin indent on
