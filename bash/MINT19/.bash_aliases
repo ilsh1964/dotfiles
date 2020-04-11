@@ -1,4 +1,4 @@
-# .BASH_ALIASES   MINT 19.3      VER: 4.0 (2020-04-11)
+# .BASH_ALIASES       MINT 19.3   ver 4.0  2020-04-11
 
 
 # GENERAL SHORTCUTS
@@ -53,7 +53,7 @@ alias dow='cd ~/Downloads'
 alias mus='cd ~/Music'
 alias vid='cd ~/Videos'
 alias pic='cd ~/Pictures'
-alias html='cd /var/www/html'
+alias html='cd /opt/lampp/htdocs'
 
 
 # APPS
