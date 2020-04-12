@@ -19,7 +19,7 @@ shopt -s autocd     #  set autocd: /home -> cd /home
 shopt -s cdspell    #  check path and fix it in vase of error
 shopt -s checkwinsize # check window size n each command and fix size
 
-# History
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
 HISTFILESIZE=2000
 HISTTIMEFORMAT="%F %T "
@@ -59,7 +59,7 @@ fi
 
 if [ "$color_prompt" = yes ]; then
      PS1='\[\e[1;31m\]\u\[\e[1;33m\]@\[\e[1;32m\]\h:\[\e[1;34m\]\W$ \[\e[m\]'
-    #FOR ROOT USER: PS1='${debian_chroot:+($debian_chroot)}\e[1;31m\u@\h:\W$ \e[m'
+     #FOR ROOT: PS1='\[\e[1;31m\]\u@\h:\W$ \[\e[m\]'
 else
      PS1='${debian_chroot:+($debian_chroot)}\u@\h:\W\$ '
 fi

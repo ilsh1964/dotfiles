@@ -1,4 +1,4 @@
-# .BASH_ALIASES       MINT 19.3   ver 4.0  2020-04-11
+# .BASH_ALIASES       MINT 19.3   ver 4.1  2020-04-12
 
 # GENERAL
 alias h=history
