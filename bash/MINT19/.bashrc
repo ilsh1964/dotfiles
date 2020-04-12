@@ -1,4 +1,4 @@
-# .BASHRC       MINT 19.3   ver 4.0  2020-04-11
+# .BASHRC       MINT 19.3   ver 4.1  2020-04-12
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -19,7 +19,7 @@ shopt -s autocd     #  set autocd: /home -> cd /home
 shopt -s cdspell    #  check path and fix it in vase of error
 shopt -s checkwinsize # check window size n each command and fix size
 
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+# History
 HISTSIZE=1000
 HISTFILESIZE=2000
 HISTTIMEFORMAT="%F %T "
@@ -58,10 +58,10 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\e[1;31m\u\e[1;33m@\e[1;32m\h:\e[1;34m\W$ \e[m'
+     PS1='\[\e[1;31m\]\u\[\e[1;33m\]@\[\e[1;32m\]\h:\[\e[1;34m\]\W$ \[\e[m\]'
     #FOR ROOT USER: PS1='${debian_chroot:+($debian_chroot)}\e[1;31m\u@\h:\W$ \e[m'
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\W\$ '
+     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\W\$ '
 fi
 unset color_prompt force_color_prompt
 
