@@ -7,8 +7,6 @@
 
 # i3 config file (v4)
 #
-# Please see http://i3wm.org/docs/userguide.html for a complete reference!
-
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -17,7 +15,7 @@ font System San Francisco Display 11
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
+font pango:DejaVu Sans Mono 8
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -36,7 +34,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec LC_CTYPE=en_US.UTF-8  dmenu_run
 
 # lock
 bindsym $mod+Shift+x exec i3lock --color 475263
@@ -62,7 +60,7 @@ bindsym $mod+Right focus right
 bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
-bindsym $mod+Shift+colon move right
+bindsym $mod+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -96,51 +94,61 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-set $workspace1 "1: Chrome"
-set $workspace2 "2: Terminals"
-set $workspace3 "3: Nemo"
-set $workspace4 "4: Cherrytree"
-set $workspace5 "5: Tools1"
-set $workspace6 "7: Tools2"
-set $workspace7 "7: Tools3"
-set $workspace8 "8: Tools4"
-set $workspace9 "9: Tools5"
-set $workspace10 "10: Firefox"
-
 # switch to workspace
-bindsym $mod+1 workspace $workspace1
-bindsym $mod+2 workspace $workspace2
-bindsym $mod+3 workspace $workspace3
-bindsym $mod+4 workspace $workspace4
-bindsym $mod+5 workspace $workspace5
-bindsym $mod+6 workspace $workspace6
-bindsym $mod+7 workspace $workspace7
-bindsym $mod+8 workspace $workspace8
-bindsym $mod+9 workspace $workspace9
-bindsym $mod+0 workspace $workspace10
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace $workspace1
-bindsym $mod+Shift+2 move container to workspace $workspace2
-bindsym $mod+Shift+3 move container to workspace $workspace3
-bindsym $mod+Shift+4 move container to workspace $workspace4
-bindsym $mod+Shift+5 move container to workspace $workspace5
-bindsym $mod+Shift+6 move container to workspace $workspace6
-bindsym $mod+Shift+7 move container to workspace $workspace7
-bindsym $mod+Shift+8 move container to workspace $workspace8
-bindsym $mod+Shift+9 move container to workspace $workspace9
-bindsym $mod+Shift+0 move container to workspace $workspace10
-
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
 # My Shortcuts
-bindsym ctrl+shift+w exec "google-chrome"
-bindsym ctrl+shift+k exec "keepassxc"
-bindsym ctrl+shift+c exec "gnome-calculator"
-bindsym ctrl+shift+f exec "nemo"
-bindsym ctrl+shift+2 exec "amixer set Master 5%+"
-bindsym ctrl+shift+1 exec "amixer set Master 5%-"
-bindsym ctrl+shift+s exec "/home/ilan/Bin/xdotool/sec"
-bindsym ctrl+shift+p exec "/home/ilan/Bin/xdotool/pass"
-bindsym ctrl+shift+e exec "/home/ilan/Bin/xdotool/email"
+bindsym ctrl+mod1+a exec "anydesk"
+bindsym ctrl+mod1+b exec "behafucha"
+bindsym ctrl+mod1+c exec "gnome-calculator"
+bindsym ctrl+mod1+e exec "atom"
+bindsym ctrl+mod1+f exec "firefox"
+bindsym ctrl+mod1+g exec "/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=gimp-2.10 --file-forwarding org.gimp.GIMP"
+bindsym ctrl+mod1+h exec "/home/ilan/Bin/refresh_hdmi_sound.sh"
+bindsym ctrl+mod1+i exec "/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=filezilla org.filezillaproject.Filezilla"
+bindsym ctrl+mod1+k exec "/var/lib/flatpak/exports/bin/tv.kodi.Kodi"
+bindsym ctrl+mod1+m exec "/usr/local/bin/turn_of_monitor"
+bindsym ctrl+mod1+n exec "nemo"
+bindsym ctrl+mod1+r exec "rofi -show run"
+bindsym ctrl+mod1+s exec "rofi -show ssh"
+bindsym ctrl+mod1+v exec "virtualbox"
+bindsym ctrl+mod1+w exec "/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/libreoffice/program/soffice --file-forwarding org.libreoffice.LibreOffice --writer"
+bindsym ctrl+mod1+x exec "xkill"
+bindsym ctrl+Shift+1 exec "amixer set Master 5%-"
+bindsym ctrl+Shift+2 exec "amixer set Master 5%+"
+bindsym ctrl+Shift+e exec "/home/ilan/Bin/xdotool/email"
+bindsym ctrl+Shift+i exec "/home/ilan/Bin/xdotool/id"
+bindsym ctrl+Shift+p exec "/home/ilan/Bin/xdotool/pass"
+bindsym ctrl+Shift+s exec "/home/ilan/Bin/xdotool/sec"
+bindsym ctrl+Shift+t exec "/home/ilan/Bin/xdotool/tel"
+
+# Print screen
+bindsym Print exec gnome-screenshot -i
+bindsym mod1+Print exec gnome-screenshot -a
+
+# Keyboard layout
+exec "setxkbmap -layout us,il"
+exec "setxkbmap -option 'grp:alt_shift_toggle'"
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -206,17 +214,16 @@ bar {
 		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
 	}
 }
+# Open windows in Floating mode
+for_window [class="Gnome-calculator"] floating enable
+for_window [class="KeePassXC"] floating enable
 
-assign [class="Google-chrome"] $workspace1
-assign [class="Nemo"] $workspace3
-assign [class="Cherrytree"] $workspace5
-assign [class="Firefox"] $workspace10
+# Assign App to workspace
+# assign [class="Nemo"] 3
+for_window [class="Firefox"] move window to workspace 1, focus
+for_window [class="Kodi"] move window to workspace 0, focus
+for_window [class="Nemo"] move window to workspace 3, focus
 
-#exec --no-startup-id compton -f
-exec clipit
-exec dropbox start
-exec ulauncher
-exec google-chrome
-exec nemo
-exec nm-applet
-exec_always feh --bg-scale /home/ilan/Dropbox/Linux/Multimedia/Wallpapers/wallpaper.jpg
+# auto launce
+exec copyq
+exec nitrogen --restore
