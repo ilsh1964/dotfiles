@@ -145,8 +145,8 @@ bindsym Print exec gnome-screenshot -i
 bindsym mod1+Print exec gnome-screenshot -a
 
 # Keyboard layout
-exec "setxkbmap -layout us,il"
-exec "setxkbmap -option 'grp:alt_shift_toggle'"
+exec --no-startup-id "setxkbmap -layout us,il"
+exec --no-startup-id "setxkbmap -option 'grp:alt_shift_toggle'"
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -223,5 +223,5 @@ for_window [class="Kodi"] move window to workspace 9, focus
 for_window [class="Nemo"] move window to workspace 3, focus
 
 # auto launce
-exec copyq
-exec nitrogen --restore
+exec --no-startup-id copyq
+exec --no-startup-id nitrogen --restore
