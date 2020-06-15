@@ -125,13 +125,15 @@ bindsym ctrl+mod1+g exec "/usr/bin/flatpak run --branch=stable --arch=x86_64 --c
 bindsym ctrl+mod1+h exec "/home/ilan/Bin/refresh_hdmi_sound.sh"
 bindsym ctrl+mod1+i exec "/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=filezilla org.filezillaproject.Filezilla"
 bindsym ctrl+mod1+k exec "/var/lib/flatpak/exports/bin/tv.kodi.Kodi"
+bindsym ctrl+mod1+l exec "xkill"
 bindsym ctrl+mod1+m exec "/usr/local/bin/turn_of_monitor"
 bindsym ctrl+mod1+n exec "nemo"
 bindsym ctrl+mod1+r exec "rofi -show run"
 bindsym ctrl+mod1+s exec "rofi -show ssh"
 bindsym ctrl+mod1+v exec "virtualbox"
 bindsym ctrl+mod1+w exec "/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/libreoffice/program/soffice --file-forwarding org.libreoffice.LibreOffice --writer"
-bindsym ctrl+mod1+x exec "xkill"
+bindsym ctrl+mod1+x exec "keepassx"
+bindsym ctrl+mod1+y "google-chrome https://youtube.com"
 bindsym ctrl+Shift+1 exec "amixer set Master 5%-"
 bindsym ctrl+Shift+2 exec "amixer set Master 5%+"
 bindsym ctrl+Shift+e exec "/home/ilan/Bin/xdotool/email"
@@ -139,6 +141,12 @@ bindsym ctrl+Shift+i exec "/home/ilan/Bin/xdotool/id"
 bindsym ctrl+Shift+p exec "/home/ilan/Bin/xdotool/pass"
 bindsym ctrl+Shift+s exec "/home/ilan/Bin/xdotool/sec"
 bindsym ctrl+Shift+t exec "/home/ilan/Bin/xdotool/tel"
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%-
+bindsym XF86AudioMute exec --no-startup-id amixer set Master 0
+bindsym XF86Calculator exec --no-startup-id gnome-calculator
 
 # Print screen
 bindsym Print exec gnome-screenshot -i
@@ -225,3 +233,4 @@ for_window [class="Nemo"] move window to workspace 3, focus
 # auto launce
 exec --no-startup-id copyq
 exec --no-startup-id nitrogen --restore
+exec --no-startup-id redshift-gtk
