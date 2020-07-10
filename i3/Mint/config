@@ -223,7 +223,7 @@ bar {
 }
 # Open windows in Floating mode
 for_window [class="Gnome-calculator"] floating enable
-for_window [class="KeePassXC"] floating enable
+for_window [class="keepassxc"] floating enable
 
 # Assign App to workspace
 # assign [class="Nemo"] 3
@@ -234,6 +234,5 @@ for_window [class="VirtualBox"] move window to workspace 8, focus
 
 # auto launce
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-exec --no-startup-id copyq
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id redshift-gtk
