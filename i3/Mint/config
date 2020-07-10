@@ -130,6 +130,7 @@ bindsym ctrl+mod1+m exec "/usr/local/bin/turn_of_monitor"
 bindsym ctrl+mod1+n exec "nemo"
 bindsym ctrl+mod1+r exec "rofi -show run"
 bindsym ctrl+mod1+s exec "rofi -show ssh"
+bindsym ctrl+mod1+t exec "timeshift-launcher"
 bindsym ctrl+mod1+v exec "virtualbox"
 bindsym ctrl+mod1+w exec "/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/libreoffice/program/soffice --file-forwarding org.libreoffice.LibreOffice --writer"
 bindsym ctrl+mod1+x exec "keepassx"
@@ -229,8 +230,10 @@ for_window [class="KeePassXC"] floating enable
 for_window [class="Firefox"] move window to workspace 1, focus
 for_window [class="Kodi"] move window to workspace 9, focus
 for_window [class="Nemo"] move window to workspace 3, focus
+for_window [class="VirtualBox"] move window to workspace 8, focus
 
 # auto launce
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 exec --no-startup-id copyq
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id redshift-gtk
