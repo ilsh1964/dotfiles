@@ -1,4 +1,4 @@
-# .BASHRC       MINT 19.3   ver 4.1  2020-04-12
+# .BASHRC       MINT 20.4   ver 5.0  2020-08-19
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -23,6 +23,7 @@ shopt -s checkwinsize # check window size n each command and fix size
 HISTSIZE=1000
 HISTFILESIZE=2000
 HISTTIMEFORMAT="%F %T "
+export HISTCONTROL=ignoredups:erasedups
 
 # If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
@@ -59,7 +60,7 @@ fi
 
 if [ "$color_prompt" = yes ]; then
      PS1='\[\e[1;31m\]\u\[\e[1;33m\]@\[\e[1;32m\]\h:\[\e[1;34m\]\W$ \[\e[m\]'
-     #FOR ROOT: PS1='\[\e[1;31m\]\u@\h:\W$ \[\e[m\]'
+     #FOR ROOT: PS1='\[\e[1;31m\]\u@\h:\W# \[\e[m\]'
 else
      PS1='${debian_chroot:+($debian_chroot)}\u@\h:\W\$ '
 fi
@@ -112,6 +113,44 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+### PATH
 PATH="$HOME/Bin/SCRIPTS/:$PATH"
+if [ -d "$HOME/.bin" ] ;
+  then PATH="$HOME/.bin:$PATH"
+fi
+
+if [ -d "$HOME/.local/bin" ] ;
+  then PATH="$HOME/.local/bin:$PATH"
+fi
+
 export EDITOR=vim
+set -o vi
+
+### ARCHIVE EXTRACTION
+# usage: ex <file>
+ex ()
+{
+  if [ -f $1 ] ; then
+    case $1 in
+      *.tar.bz2)   tar xjf $1   ;;
+      *.tar.gz)    tar xzf $1   ;;
+      *.bz2)       bunzip2 $1   ;;
+      *.rar)       unrar x $1   ;;
+      *.gz)        gunzip $1    ;;
+      *.tar)       tar xf $1    ;;
+      *.tgz)       tar xzf $1   ;;
+      *.zip)       unzip $1     ;;
+      *.Z)         uncompress $1;;
+      *.7z)        7z x $1      ;;
+      *.deb)       ar x $1      ;;
+      *.tar.xz)    tar xf $1    ;;
+      *)           echo "'$1' cannot be extracted via ex()" ;;
+    esac
+  else
+    echo "'$1' is not a valid file"
+  fi
+}
+
+
 
