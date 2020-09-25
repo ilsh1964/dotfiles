@@ -131,6 +131,7 @@ bindsym ctrl+mod1+n exec "nemo"
 bindsym ctrl+mod1+r exec "rofi -show run"
 bindsym ctrl+mod1+s exec "rofi -show ssh"
 bindsym ctrl+mod1+t exec "timeshift-launcher"
+bindsym ctrl+mod1+u exec "/opt/whatsapp-desktop/WhatsApp"
 bindsym ctrl+mod1+v exec "virtualbox"
 bindsym ctrl+mod1+w exec "libreoffice --writer"
 bindsym ctrl+mod1+x exec "/usr/bin/keepassxc"
@@ -224,6 +225,7 @@ bar {
 # Open windows in Floating mode
 for_window [class="Gnome-calculator"] floating enable
 for_window [class="keepassxc"] floating enable
+#for_window [class="VirtualBox Manager"] floating enable
 
 # Assign App to workspace
 # assign [class="Nemo"] 3
@@ -237,4 +239,4 @@ exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agen
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id redshift-gtk
 exec --no-startup-id nm-applet
-exec --no-startup-id copyq
+exec --no-startup-id clipit
