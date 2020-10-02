@@ -42,6 +42,7 @@ alias update='sudo apt update'
 alias upgrade='sudo apt upgrade'
 
 # SHORTCUTS TO SERVERS
+alias adgaurd='ssh pi@10.0.0.136'
 alias bn1='backup_NAS1.sh'
 alias bn2='backup_NAS2.sh'
 alias hiro-test='ssh user@10.0.0.131'
