@@ -126,7 +126,7 @@ bindsym ctrl+mod1+h exec "/home/ilan/Bin/refresh_hdmi_sound.sh"
 bindsym ctrl+mod1+i exec "/usr/bin/filezilla"
 bindsym ctrl+mod1+k exec "/var/lib/flatpak/exports/bin/tv.kodi.Kodi"
 bindsym ctrl+mod1+l exec "xkill"
-bindsym ctrl+mod1+m exec "/usr/local/bin/turn_of_monitor"
+bindsym ctrl+mod1+m exec "thunderbird"
 bindsym ctrl+mod1+n exec "nemo"
 bindsym ctrl+mod1+r exec "rofi -show run"
 bindsym ctrl+mod1+s exec "rofi -show ssh"
@@ -225,18 +225,21 @@ bar {
 # Open windows in Floating mode
 for_window [class="Gnome-calculator"] floating enable
 for_window [class="keepassxc"] floating enable
+#for_window [class="Xfce4-terminal"] floating enable
 #for_window [class="VirtualBox Manager"] floating enable
 
 # Assign App to workspace
 # assign [class="Nemo"] 3
 for_window [class="Firefox"] move window to workspace 1, focus
-for_window [class="Kodi"] move window to workspace 9, focus
 for_window [class="Nemo"] move window to workspace 3, focus
+for_window [class="Thunderbird"] move window to workspace 7, focus
 for_window [class="VirtualBox"] move window to workspace 8, focus
+for_window [class="Kodi"] move window to workspace 9, focus
 
 # auto launce
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id redshift-gtk
 exec --no-startup-id nm-applet
-exec --no-startup-id clipit
+exec --no-startup-id xfce4-clipman
+exec --no-startup-id guake
