@@ -1,0 +1,33 @@
+I3:
+- Super+Pause   -   Logout \ Restart \ Shutdown
+- Super+c       -   Edit i3 config
+- Super+g       -   Show this help
+- Super+Shift+c -   Reload configuration file
+- Super+Shift+r -   Restart restart i3 inplace (preserves layout/session)
+- Super+Shift+e -   Exit i3
+
+
+Application:
+- ctrl+Alt+a    -   Anydesk
+- ctrl+Alt+b    -   Behafucha
+- ctrl+Alt+c    -   Gnome-calculator
+- ctrl+Alt+f    -   Vifm
+- ctrl+Alt+g    -   Gimp
+- ctrl+Alt+k    -   Keepass
+- ctrl+Alt+l    -   Libreoffice writer
+- ctrl+Alt+m    -   Kodi
+- ctrl+Alt+n    -   Nemo
+- ctrl+Alt+r    -   Rofi -show run
+- ctrl+Alt+s    -   Rofi -show ssh
+- ctrl+Alt+t    -   Thunderbird
+- ctrl+Alt+u    -   WhatsApp
+- ctrl+Alt+v    -   Virtualbox
+- ctrl+Alt+w    -   Firefox
+- ctrl+Alt+x    -   xkill
+- ctrl+Alt+z    -   Filezilla
+
+Hardware:
+- ctrl+Alt+h    -   Refresh hdmi sound
+- ctrl+Shift+1  -   Volume Down
+- ctrl+Shift+2  -   Volume Up
+

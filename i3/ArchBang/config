@@ -1,5 +1,5 @@
 # i3 Window Manager Configuration File.
-# 
+#
 # Modified for ArchBang by mrgreen [mrgreen@archbang,org]
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
@@ -15,7 +15,7 @@ set $mod1 Mod1
 set $ei --no-startup-id
 
 # Gaps
-gaps inner 3 
+gaps inner 3
 gaps outer 3
 
 # Binds for Gaps
@@ -142,7 +142,7 @@ mode "$mode_system" {
     bindsym l exec --no-startup-id $Locker, mode "default"
     bindsym e exec --no-startup-id i3-msg exit, mode "default"
     bindsym r exec --no-startup-id systemctl reboot, mode "default"
-    bindsym s exec --no-startup-id systemctl poweroff -i, mode "default"  
+    bindsym s exec --no-startup-id systemctl poweroff -i, mode "default"
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
@@ -213,7 +213,7 @@ bar {
 # Hide titlebars
 default_border pixel 2
 
-# Run autostart-i3 script                   
+# Run autostart-i3 script
 exec --no-startup-id ~/.config/i3/autostart-i3
 
 #
@@ -221,7 +221,7 @@ exec --no-startup-id ~/.config/i3/autostart-i3
 #
 
 # Edit configs
-bindsym $mod+c exec $ei config_edit 
+bindsym $mod+c exec $ei config_edit
 
 # Browser
 bindsym $mod+w exec $ei firefox
@@ -233,7 +233,7 @@ bindsym $mod+e exec $ei l3afpad
 bindsym $mod+f exec $ei pcmanfm
 
 # Installers
-bindsym $mod+i exec $ei sudo lxterminal -e "/home/ablive/Scripts/abinstall" 
+bindsym $mod+i exec $ei sudo lxterminal -e "/home/ablive/Scripts/abinstall"
 bindsym $mod+z exec $ei /home/ablive/Scripts/zen-installer
 
 # Guide

@@ -9,6 +9,9 @@
 #
 set $mod Mod4
 
+# Lock the screen
+set $Locker i3lock && sleep 1
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font System San Francisco Display 11
@@ -116,26 +119,27 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 # My Shortcuts
+#bindsym $mod+g      exec "/usr/local/bin/show_help"
+bindsym $mod+c      exec "gvim ~/.config/i3/config"
+bindsym $mod+g      exec "gvim ~/.config/i3/help"
 bindsym ctrl+mod1+a exec "anydesk"
 bindsym ctrl+mod1+b exec "behafucha"
 bindsym ctrl+mod1+c exec "gnome-calculator"
-bindsym ctrl+mod1+e exec "atom"
-bindsym ctrl+mod1+f exec "firefox"
+bindsym ctrl+mod1+f exec "xfce4-terminal -e vifm"
 bindsym ctrl+mod1+g exec "/usr/bin/gimp"
 bindsym ctrl+mod1+h exec "/home/ilan/Bin/refresh_hdmi_sound.sh"
-bindsym ctrl+mod1+i exec "/usr/bin/filezilla"
-bindsym ctrl+mod1+k exec "/var/lib/flatpak/exports/bin/tv.kodi.Kodi"
-bindsym ctrl+mod1+l exec "xkill"
-bindsym ctrl+mod1+m exec "thunderbird"
+bindsym ctrl+mod1+k exec "/usr/bin/keepassxc"
+bindsym ctrl+mod1+l exec "libreoffice --writer"
+bindsym ctrl+mod1+m exec "/var/lib/flatpak/exports/bin/tv.kodi.Kodi"
 bindsym ctrl+mod1+n exec "nemo"
 bindsym ctrl+mod1+r exec "rofi -show run"
 bindsym ctrl+mod1+s exec "rofi -show ssh"
-bindsym ctrl+mod1+t exec "timeshift-launcher"
+bindsym ctrl+mod1+t exec "thunderbird"
 bindsym ctrl+mod1+u exec "/opt/whatsapp-desktop/WhatsApp"
 bindsym ctrl+mod1+v exec "virtualbox"
-bindsym ctrl+mod1+w exec "libreoffice --writer"
-bindsym ctrl+mod1+x exec "/usr/bin/keepassxc"
-bindsym ctrl+mod1+y "google-chrome https://youtube.com"
+bindsym ctrl+mod1+w exec "firefox"
+bindsym ctrl+mod1+x exec "xkill"
+bindsym ctrl+mod1+z exec "/usr/bin/filezilla"
 bindsym ctrl+Shift+1 exec "amixer set Master 5%-"
 bindsym ctrl+Shift+2 exec "amixer set Master 5%+"
 bindsym ctrl+Shift+e exec "/home/ilan/Bin/xdotool/email"
@@ -144,6 +148,19 @@ bindsym ctrl+Shift+p exec "/home/ilan/Bin/xdotool/pass"
 bindsym ctrl+Shift+s exec "/home/ilan/Bin/xdotool/sec"
 bindsym ctrl+Shift+t exec "/home/ilan/Bin/xdotool/tel"
 
+set $mode_system System (l) lock, (e) logout, (r) reboot, (s) shutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id $Locker, mode "default"
+    bindsym e exec --no-startup-id i3-msg exit, mode "default"
+    bindsym r exec --no-startup-id systemctl reboot, mode "default"
+    bindsym s exec --no-startup-id systemctl poweroff -i, mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+Pause mode "$mode_system"
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%-
@@ -243,3 +260,5 @@ exec --no-startup-id redshift-gtk
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-clipman
 exec --no-startup-id guake
+
+
