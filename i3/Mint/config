@@ -249,6 +249,7 @@ for_window [class="keepassxc"] floating enable
 # assign [class="Nemo"] 3
 for_window [class="Firefox"] move window to workspace 1, focus
 for_window [class="Nemo"] move window to workspace 3, focus
+#for_window [class="Terminal - ~ - VIFM"] move window to workspace 3, focus
 for_window [class="Thunderbird"] move window to workspace 7, focus
 for_window [class="VirtualBox"] move window to workspace 8, focus
 for_window [class="Kodi"] move window to workspace 9, focus
@@ -260,5 +261,4 @@ exec --no-startup-id redshift-gtk
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-clipman
 exec --no-startup-id guake
-
-
+exec --no-startup-id "sleep 5 ; /home/ilan/Bin/AppImage/Nextcloud.AppImage"
