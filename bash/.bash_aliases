@@ -1,4 +1,4 @@
-# .BASH_ALIASES       MINT 20.04   ver 5.0  2020-08-19
+# .BASH_ALIASES       MINT 20.04   ver 6.0  2020-11-22
 
 # GENERAL
 alias ...="cd ../.. "
@@ -42,22 +42,16 @@ alias update='sudo apt update'
 alias upgrade='sudo apt upgrade'
 
 # SHORTCUTS TO SERVERS
-alias adgaurd='ssh pi@10.0.0.136'
-alias bn1='backup_NAS1.sh'
-alias bn2='backup_NAS2.sh'
-alias hiro-test='ssh user@10.0.0.131'
 alias hiro='ssh user@10.0.0.111'
-alias nas1='ssh pi@10.0.0.99'
-alias nas2='ssh pi@10.0.0.100'
+alias hiro-test='ssh user@10.0.0.131'
 alias proactive='ssh user@10.0.0.113'
 alias shavit='ssh shavit@10.0.0.112'
-alias vpn='ssh pi@10.0.0.98'
+alias tikshuv='ssh user@10.0.0.114'
 alias web='ssh pi@10.0.0.99'
 
 # SHORTCUTS TO DIRECTORIES
 alias doc='cd ~/Documents'
 alias dow='cd ~/Downloads'
-alias fpak='/var/lib/flatpak/app'
 alias html='cd /opt/lampp/htdocs'
 alias mus='cd ~/Music'
 alias pic='cd ~/Pictures'

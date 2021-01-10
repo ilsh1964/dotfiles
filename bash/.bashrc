@@ -1,4 +1,4 @@
-# .BASHRC       MINT 20.4   ver 5.0  2020-08-19
+# .BASHRC       MINT 20.4   ver 6.0  2020-11-22
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -13,17 +13,16 @@ esac
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
 
-# shopt - set and unset shell options: -s: set, -u: disable
-shopt -s histappend #  set history
-shopt -s autocd     #  set autocd: /home -> cd /home
-shopt -s cdspell    #  check path and fix it in vase of error
-shopt -s checkwinsize # check window size n each command and fix size
+# append to the history file, don't overwrite it
+shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
 HISTFILESIZE=2000
-HISTTIMEFORMAT="%F %T "
-export HISTCONTROL=ignoredups:erasedups
+
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
 
 # If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
@@ -60,9 +59,8 @@ fi
 
 if [ "$color_prompt" = yes ]; then
      PS1='\[\e[1;31m\]\u\[\e[1;33m\]@\[\e[1;32m\]\h:\[\e[1;34m\]\W$ \[\e[m\]'
-     #FOR ROOT: PS1='\[\e[1;31m\]\u@\h:\W# \[\e[m\]'
 else
-     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\W\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 unset color_prompt force_color_prompt
 
@@ -125,7 +123,6 @@ if [ -d "$HOME/.local/bin" ] ;
 fi
 
 export EDITOR=vim
-set -o vi
 
 ### ARCHIVE EXTRACTION
 # usage: ex <file>
@@ -151,6 +148,4 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
-
-
 

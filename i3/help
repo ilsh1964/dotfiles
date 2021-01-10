@@ -9,7 +9,7 @@ I3:
 
 Application:
 - ctrl+Alt+a    -   Anydesk
-- ctrl+Alt+b    -   Behafucha
+- ctrl+Alt+b    -   break-timer
 - ctrl+Alt+c    -   Gnome-calculator
 - ctrl+Alt+f    -   Vifm
 - ctrl+Alt+g    -   Gimp
@@ -23,11 +23,36 @@ Application:
 - ctrl+Alt+u    -   WhatsApp
 - ctrl+Alt+v    -   Virtualbox
 - ctrl+Alt+w    -   Firefox
-- ctrl+Alt+x    -   xkill
+- ctrl+Alt+x    -   Xkill
+- ctrl+Alt+y    -   Youtube
 - ctrl+Alt+z    -   Filezilla
 
 Hardware:
 - ctrl+Alt+h    -   Refresh hdmi sound
 - ctrl+Shift+1  -   Volume Down
 - ctrl+Shift+2  -   Volume Up
+
+
+
+
+
+
+
+
+
+
+
+VIFM:
+i- yy, p        -   copy file, paste
+:copy, :move    -   to other pan
+cw, cW          -   rename file, W keep suffix
+:marks          -   show marks
+ms, 's          -   mark directory as s, goto to s directory
+gg, M, G        -   goto top, middle, button
+enter           -   launch text editor
+e               -   preview the documents
+:shell          -   open terminal
+dd              -   delete a file. u to un-delete
+za              -   show\hide hidden files
+:q              -   quit
 
