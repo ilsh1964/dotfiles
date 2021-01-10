@@ -1,0 +1,767 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/ilan/
+	..
+1602582281
+'M
+	/media/ilan/BACKUP/NAS1/DEV/GITHUB/Dot_Files/i3/Mint
+	config
+1605384020
+'N
+	/media/ilan/BACKUP/NAS1
+	..
+1605383918
+'V
+	/home/ilan/Downloads
+	SHAVIT
+1604585568
+'b
+	/home/ilan/bin/
+	..
+1602582281
+'c
+	/home/ilan/.config/vifm
+	vifminfo
+1604007112
+'h
+	/home/ilan/
+	..
+1602582281
+'i
+	/home/ilan/.config/i3
+	..
+1604355162
+'k
+	/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic
+	Edvard Grieg
+1606415346
+'l
+	/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic
+	Drorak
+1606415571
+'m
+	/media/ilan/BACKUP/NAS1/DEV/GITHUB/Dot_Files/i3/Mint
+	config
+1605384017
+'n
+	/home/ilan/Downloads
+	SHAVIT
+1604585554
+'v
+	/media/ilan/BACKUP/NAS1/VM/VirtualBox VMs
+	..
+1604003493
+
+# Bookmarks:
+
+# TUI:
+al
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/ilan/Downloads/HIRO
+	..
+0
+d/home/ilan/Downloads
+	HIRO
+2
+d/home/ilan
+	Downloads
+4
+d/home/ilan/.config/i3
+	config
+1
+d/home/ilan
+	..
+0
+d/home
+	..
+0
+d/
+	media
+10
+d/media
+	ilan
+1
+d/media/ilan
+	BACKUP
+1
+d/media/ilan/BACKUP
+	NAS1
+3
+d/media/ilan/BACKUP/NAS1
+	DEV
+2
+d/media/ilan/BACKUP/NAS1/DEV
+	GITHUB
+3
+d/media/ilan/BACKUP/NAS1/DEV/GITHUB
+	Dot_Files
+3
+d/media/ilan/BACKUP/NAS1/DEV/GITHUB/Dot_Files
+	i3
+2
+d/media/ilan/BACKUP/NAS1/DEV/GITHUB/Dot_Files/i3
+	Mint
+3
+d/media/ilan/BACKUP/NAS1/DEV/GITHUB/Dot_Files/i3/Mint
+	..
+0
+d/home/ilan
+	Nextcloud
+5
+d/home/ilan/Nextcloud
+	InstantUpload
+3
+d/home/ilan/Nextcloud/InstantUpload
+	Screenshots
+1
+d/home/ilan/Nextcloud/InstantUpload/Screenshots
+	2020
+1
+d/home/ilan/Nextcloud/InstantUpload/Screenshots/2020
+	11
+1
+d/home/ilan/Nextcloud/InstantUpload/Screenshots/2020/11
+	..
+0
+d/home/ilan/Nextcloud/InstantUpload/Screenshots/2020
+	..
+0
+d/home/ilan/Nextcloud/InstantUpload/Screenshots
+	..
+0
+d/home/ilan/Nextcloud/InstantUpload
+	..
+0
+d/home/ilan/Nextcloud
+	..
+0
+d/home/ilan
+	Templates
+7
+d/home/ilan/Templates
+	..
+0
+d/home/ilan
+	Templates
+7
+d/media/ilan/BACKUP/NAS1
+	KODI
+5
+d/media/ilan/BACKUP/NAS1/KODI
+	..
+0
+d/media/ilan/BACKUP/NAS1
+	DOK
+4
+d/media/ilan/BACKUP/NAS1/DOK
+	PortableApps
+2
+d/media/ilan/BACKUP/NAS1/DOK/PortableApps
+	PortableApps
+2
+d/media/ilan/BACKUP/NAS1/DOK/PortableApps/PortableApps
+	VirtualVolumesViewPortable
+24
+d/media/ilan/BACKUP/NAS1/DEV/GITHUB/Dot_Files/i3/Mint
+	config
+1
+d/media/ilan/BACKUP
+	..
+0
+d/media/ilan
+	BACKUP
+1
+d/media/ilan/BACKUP
+	NAS
+3
+d/media/ilan/BACKUP/NAS
+	MEDIA
+3
+d/media/ilan/BACKUP/NAS/MEDIA
+	MUSIC
+3
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC
+	..
+0
+d/media/ilan/BACKUP/NAS/MEDIA
+	MUSIC
+3
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC
+	Classic
+1
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic
+	Frederic Chopin
+6
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Frederic Chopin
+	Piano Concerto No. 1
+1
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Frederic Chopin/Piano Concerto No. 1
+	..
+0
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Frederic Chopin
+	Piano Concerto No. 1
+1
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic
+	Johannes Brahms
+8
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Johannes Brahms
+	Piano Concerto No. 1
+1
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Johannes Brahms/Piano Concerto No. 1
+	..
+0
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Johannes Brahms
+	Piano Concerto No. 1
+1
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic
+	Wolfgang Amadeus Mozart
+15
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Wolfgang Amadeus Mozart
+	..
+0
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic
+	Drorak
+3
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Drorak
+	..
+0
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic
+	Berlioz
+2
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Berlioz
+	Symphonie Fantastique
+1
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Berlioz/Symphonie Fantastique
+	CD 1
+1
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Berlioz/Symphonie Fantastique/CD 1
+	..
+0
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Berlioz/Symphonie Fantastique
+	..
+0
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Berlioz
+	..
+0
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic
+	Drorak
+4
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Drorak
+	..
+0
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic
+	Gustav Mahler
+9
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Gustav Mahler
+	..
+0
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic
+	Gustav Mahler
+9
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Gustav Mahler
+	..
+0
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic
+	Berlioz
+2
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Berlioz
+	..
+0
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic
+	Gustav Mahler
+9
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Gustav Mahler
+	..
+0
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic
+	Drorak
+4
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Drorak
+	..
+0
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic
+	Berlioz
+2
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Berlioz
+	..
+0
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic
+	Drorak
+4
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Drorak
+	..
+0
+d/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic
+	Drorak
+3
+d/home/ilan
+	Applications
+2
+d/home/ilan/Applications
+	..
+0
+d/home/ilan
+	..
+0
+d/home
+	..
+0
+d/
+	media
+10
+d/media
+	ilan
+1
+d/media/ilan
+	BACKUP
+1
+d/media/ilan/BACKUP
+	NAS
+3
+d/media/ilan/BACKUP/NAS
+	MEDIA
+3
+d/media/ilan/BACKUP/NAS/MEDIA
+	MOVIES
+2
+d/media/ilan/BACKUP/NAS/MEDIA/MOVIES
+	Death on the Nile (1978)
+3
+d/media/ilan/BACKUP/NAS/MEDIA
+	MOVIES
+2
+d/media/ilan/BACKUP/NAS/MEDIA/MOVIES
+	Notorious (1946)
+12
+d/media/ilan/BACKUP/NAS/MEDIA/MOVIES/Notorious (1946)
+	..
+0
+d/media/ilan/BACKUP
+	..
+0
+d/media/ilan
+	..
+0
+d/media
+	..
+0
+d/
+	mnt
+13
+d/home/ilan
+	Music
+5
+d/home/ilan/Music
+	..
+0
+d/home/ilan
+	Music
+5
+d
+
+# Right window history (oldest to newest):
+D/home/ilan/Documents
+	..
+0
+D/home/ilan
+	Downloads
+4
+D/home/ilan/Downloads
+	HIRO
+1
+D/home/ilan/Downloads/HIRO
+	..
+0
+D/home/ilan/Downloads
+	HIRO
+1
+D/home/ilan
+	Downloads
+4
+D/home/ilan/Downloads
+	PROACTIVE
+2
+D/home/ilan/Downloads/PROACTIVE
+	..
+0
+D/home/ilan/Downloads
+	..
+0
+D/home/ilan
+	Pictures
+6
+D/home/ilan/Pictures
+	..
+0
+D/home/ilan
+	..
+0
+D/home
+	..
+0
+D/
+	media
+10
+D/media
+	ilan
+1
+D/media/ilan
+	BACKUP
+1
+D/media/ilan/BACKUP
+	NAS1
+3
+D/media/ilan/BACKUP/NAS1
+	..
+0
+D/media/ilan/BACKUP
+	NAS1
+3
+D/media/ilan/BACKUP/NAS1
+	..
+0
+D/home/ilan
+	..
+0
+D/media/ilan/BACKUP/NAS1
+	BACKUP
+1
+D/media/ilan/BACKUP/NAS1/BACKUP
+	IMAGES
+4
+D/media/ilan/BACKUP/NAS1/BACKUP/IMAGES
+	..
+0
+D/media/ilan/BACKUP/NAS1/BACKUP
+	..
+0
+D/media/ilan/BACKUP/NAS1
+	VM
+8
+D/media/ilan/BACKUP/NAS1/VM
+	..
+0
+D/media/ilan/BACKUP/NAS1
+	VM
+8
+D/media/ilan/BACKUP/NAS1/VM
+	VirtualBox VMs
+1
+D/media/ilan/BACKUP/NAS1/VM/VirtualBox VMs
+	ISO
+5
+D/media/ilan/BACKUP/NAS1/VM/VirtualBox VMs/ISO
+	..
+0
+D/home/ilan
+	..
+0
+D/home
+	ilan
+1
+D/home/ilan
+	..
+0
+D/media/ilan/BACKUP/NAS1
+	MULTIMEDIA
+7
+D/media/ilan/BACKUP/NAS1/MULTIMEDIA
+	SPORT
+1
+D/media/ilan/BACKUP/NAS1/MULTIMEDIA/SPORT
+	Pilatis-2017
+2
+D/media/ilan/BACKUP/NAS1/MULTIMEDIA/SPORT/Pilatis-2017
+	..
+0
+D/media/ilan/BACKUP/NAS1/MULTIMEDIA/SPORT
+	DEV
+1
+D/media/ilan/BACKUP/NAS1/MULTIMEDIA/SPORT/DEV
+	..
+0
+D/media/ilan/BACKUP/NAS1/MULTIMEDIA/SPORT
+	..
+0
+D/media/ilan/BACKUP/NAS1/MULTIMEDIA
+	..
+0
+D/media/ilan/BACKUP/NAS1
+	KODI
+5
+D/media/ilan/BACKUP/NAS1/KODI
+	MOVIES
+1
+D/media/ilan/BACKUP/NAS1/KODI/MOVIES
+	אמדאוס
+2
+D/media/ilan/BACKUP/NAS1/KODI/MOVIES/אמדאוס
+	..
+0
+D/media/ilan/BACKUP/NAS1/KODI/MOVIES
+	אמדאוס
+2
+D/home/ilan
+	Pictures
+6
+D/home/ilan/Pictures
+	Screenshot from 2020-10-18 18-35-42.png
+2
+D/media/ilan/BACKUP/NAS1/VM/VirtualBox VMs
+	ISO
+5
+D/home/ilan/.config/vifm
+	vifmrc
+5
+D/home/ilan
+	Bin
+1
+D/home
+	ilan
+1
+D/home/ilan
+	Bin
+1
+D/home
+	ilan
+1
+D/home/ilan
+	Bin
+1
+D/home
+	ilan
+1
+D/home/ilan
+	Bin
+1
+D/home/ilan/.config/i3
+	..
+0
+D/home/ilan/.config
+	..
+0
+D/home/ilan
+	..
+0
+D/home
+	..
+0
+D/
+	media
+10
+D/media
+	ilan
+1
+D/media/ilan
+	BACKUP
+1
+D/media/ilan/BACKUP
+	..
+0
+D/media/ilan
+	BACKUP
+1
+D/media
+	ilan
+1
+D/media/ilan
+	ventoy
+2
+D/media/ilan/ventoy
+	..
+0
+D/media/ilan
+	..
+0
+D/media
+	..
+0
+D/
+	media
+10
+D/media
+	ilan
+1
+D/media/ilan
+	BACKUP
+1
+D/media/ilan/BACKUP
+	NAS1
+3
+D/media/ilan/BACKUP/NAS1
+	BACKUP
+1
+D/media/ilan/BACKUP/NAS1/BACKUP
+	IMAGES
+4
+D/media/ilan/BACKUP/NAS1/BACKUP/IMAGES
+	RECOVERY
+3
+D/media/ilan/BACKUP/NAS1/BACKUP/IMAGES/RECOVERY
+	..
+0
+D/media/ilan/BACKUP/NAS1/BACKUP/IMAGES
+	RECOVERY
+3
+D/media/ilan/BACKUP/NAS1/BACKUP/IMAGES/RECOVERY
+	rescuezilla-2.0-64bit.iso
+7
+D/home/ilan
+	Downloads
+4
+D/home/ilan/Downloads
+	orig_bash_history_root
+6
+D/home/ilan
+	Downloads
+4
+D/home/ilan/Downloads
+	VirtualVolumesViewPortable
+5
+D/home/ilan/Downloads/VirtualVolumesViewPortable
+	..
+0
+D/home/ilan/.config/i3
+	config
+1
+D/home/ilan/.config
+	i3
+32
+D/home/ilan/Downloads
+	Mozart - Symphony No.41, Violin Concerto No.5 - Mito Chamber Orchestra & Seiji Ozawa
+3
+D/home/ilan
+	Downloads
+4
+D/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic
+	Drorak
+4
+D/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Drorak
+	Symphony no. 9
+1
+D/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Drorak/Symphony no. 9
+	Wiener Philharmoniker, Herbert von Karajan - Dvorak-Symphony no. 9 - Smetana-Die Moldau.txt
+11
+D/media/ilan/BACKUP/NAS/MEDIA/MUSIC/Classic/Drorak
+	Symphony No. 9
+1
+D/home/ilan
+	Downloads
+4
+D/home/ilan/Downloads
+	HIRO
+2
+D/home/ilan
+	Downloads
+6
+D/home
+	ilan
+1
+D/home/ilan
+	Downloads
+4
+D
+
+# Command line history (oldest to newest):
+:colorscheme semidarkdesert
+:5select
+:wq
+:set numbers
+:set number
+:q
+:w
+:media
+:command ls
+:command "ls -l"
+:copy x
+:copy
+:marks
+:wq!
+:mkdir Drorak
+:mkdir Berlioz
+:move
+:shell
+
+# Search history (oldest to newest):
+/.config
+/i
+/i3
+
+# Prompt history (oldest to newest):
+pbackup_DOK.sh
+pshowDocument.pdf
+p2020-10
+phtop
+pSymphonie Fantastique
+pSymphony no. 9
+pSymphony Fantastique
+pAPPMNG CHECK.txt
+pam.traps
+pBrave.AppImage
+pAtom.AppImage
+pBreakTimer.AppImage
+pGIMP.AppImage
+pStacer.AppImage
+pBalenaEtcher.AppImage
+pA Man and a Woman (1966)
+pNotorious (1946)
+pThe Phantom of the Opera (2004)
+pThe Pianist (2002)
+pThe Peacemaker (1997)
+pThe Miser (1980)
+pThe Last Fling (1987)
+pPrivate Popsicle (1982)
+pHanover Street (1979)
+pOperation Thunderbolt (1977)
+pNina's Tragedies (2003)
+pAmadeus (1984)
+pLove Story (1970)
+pMoonstruck (1987)
+pEvil Under the Sun (1982)
+pDirty Dancing (1987)
+pDeath on the Nile (1978)
+pBachelorette (2012)
+pNotorious (1946) (copy).srt
+pNotorious (1946).srt
+pNotorious (1946).mp4
+
+# Local filter history (oldest to newest):
+
+# Registers:
+""/home/ilan/.config/i3/config
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+t/media/ilan/BACKUP/.vifm-Trash-1000/000_ISO
+	/media/ilan/BACKUP/NAS1/VM/VirtualBox VMs/Hiro/ISO
+t/media/ilan/BACKUP/.vifm-Trash-1000/001_ISO
+	/media/ilan/BACKUP/NAS1/VM/VirtualBox VMs/OMV/ISO
+t/home/ilan/.local/share/vifm/Trash/000_AnyDesk
+	/home/ilan/Videos/AnyDesk
+t/home/ilan/.local/share/vifm/Trash/000_x
+	/home/ilan/.config/i3/x
+t/home/ilan/.local/share/vifm/Trash/000_2020-471588001_20201103_234456.pdf
+	/home/ilan/Downloads/2020-471588001_20201103_234456.pdf
+t/home/ilan/.local/share/vifm/Trash/000_Screenshot_2020-11-14-19-29-05-377_com.mi.android.globallauncher.jpg
+	/home/ilan/Nextcloud/InstantUpload/Screenshots/2020/11/Screenshot_2020-11-14-19-29-05-377_com.mi.android.globallauncher.jpg
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0
