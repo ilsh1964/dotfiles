@@ -124,7 +124,7 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+c      exec "gvim ~/.config/i3/config"
 bindsym $mod+g      exec "gvim ~/.config/i3/help"
 bindsym ctrl+mod1+a exec "anydesk"
-bindsym ctrl+mod1+b exec "behafucha"
+#bindsym ctrl+mod1+b exec "behafucha"
 bindsym ctrl+mod1+c exec "gnome-calculator"
 bindsym ctrl+mod1+f exec "xfce4-terminal -e vifm"
 bindsym ctrl+mod1+g exec "gimp"
@@ -132,20 +132,22 @@ bindsym ctrl+mod1+h exec "/home/ilan/Bin/refresh_hdmi_sound.sh"
 bindsym ctrl+mod1+k exec "keepassx"
 bindsym ctrl+mod1+l exec "libreoffice --writer"
 bindsym ctrl+mod1+m exec "/var/lib/flatpak/exports/bin/tv.kodi.Kodi"
-bindsym ctrl+mod1+n exec "nemo"
+bindsym ctrl+mod1+n exec "thunar"
 bindsym ctrl+mod1+r exec "rofi -show run"
 bindsym ctrl+mod1+s exec "rofi -show ssh"
 bindsym ctrl+mod1+t exec "thunderbird"
 bindsym ctrl+mod1+u exec "/opt/whatsapp-desktop/WhatsApp"
-bindsym ctrl+mod1+v exec "virtualbox"
+bindsym ctrl+mod1+v exec "virtualbox -style Fusion"
 bindsym ctrl+mod1+w exec "firefox"
 bindsym ctrl+mod1+x exec "xkill"
 bindsym ctrl+mod1+y exec "firefox -url https://youtube.com && sleep 2 && xdotool search --sync --onlyvisible --class 'Firefox' windowactivate key F11"
 bindsym ctrl+mod1+z exec "filezilla"
 bindsym ctrl+Shift+1 exec "amixer set Master 5%-"
 bindsym ctrl+Shift+2 exec "amixer set Master 5%+"
+bindsym ctrl+Shift+b exec "/home/ilan/Bin/xdotool/bezeq"
 bindsym ctrl+Shift+e exec "/home/ilan/Bin/xdotool/email"
 bindsym ctrl+Shift+i exec "/home/ilan/Bin/xdotool/id"
+bindsym ctrl+Shift+m exec "/home/ilan/Bin/xdotool/mekhrubon"
 bindsym ctrl+Shift+p exec "/home/ilan/Bin/xdotool/pass"
 bindsym ctrl+Shift+s exec "/home/ilan/Bin/xdotool/sec"
 bindsym ctrl+Shift+t exec "/home/ilan/Bin/xdotool/tel"
@@ -162,7 +164,7 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
-bindsym $mod+Pause mode "$mode_system"
+bindsym $mod+x mode "$mode_system"
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%-
@@ -173,9 +175,6 @@ bindsym XF86Calculator exec --no-startup-id gnome-calculator
 bindsym Print exec gnome-screenshot -i
 bindsym mod1+Print exec gnome-screenshot -a
 
-# Keyboard layout
-exec --no-startup-id "setxkbmap -layout us,il"
-exec --no-startup-id "setxkbmap -option 'grp:alt_shift_toggle'"
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -248,10 +247,9 @@ for_window [class="keepassxc"] floating enable
 #for_window [class="VirtualBox Manager"] floating enable
 
 # Assign App to workspace
-# assign [class="Nemo"] 3
 for_window [class="Firefox"] move window to workspace 1, focus
-for_window [class="Nemo"] move window to workspace 3, focus
-#for_window [class="Terminal - ~ - VIFM"] move window to workspace 3, focus
+for_window [class="Thunar"] move window to workspace 3, focus
+for_window [class="Terminal - ~ - VIFM"] move window to workspace 3, focus
 for_window [class="Thunderbird"] move window to workspace 7, focus
 for_window [class="VirtualBox"] move window to workspace 8, focus
 for_window [class="Kodi"] move window to workspace 9, focus
@@ -262,6 +260,6 @@ exec --no-startup-id nitrogen --restore
 exec --no-startup-id redshift-gtk
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-clipman
-exec --no-startup-id guake
-exec --no-startup-id break-timer
+exec --no-startup-id "setxkbmap -layout us,il"
+exec --no-startup-id "setxkbmap -option 'grp:alt_shift_toggle'"
 exec --no-startup-id "sleep 5 ; synology-drive"
