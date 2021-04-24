@@ -1,11 +1,21 @@
 I3:
-- Super+Pause   -   Logout \ Restart \ Shutdown
+
+Container Layout:
+- Super+e           -   i3 split mode
+- Super+f           -   i3 full screen
+- Super+s           -   i3 stack mode
+- Super+t           -   i3 tab mode
+- Super+Shift Space -   i3 Floating mode
+
+General:
+- Super+0       -   Logout \ Restart \ Shutdown
 - Super+c       -   Edit i3 config
+- Super+d       -   Rofi
 - Super+g       -   Show this help
 - Super+Shift+c -   Reload configuration file
-- Super+Shift+r -   Restart restart i3 inplace (preserves layout/session)
 - Super+Shift+e -   Exit i3
-
+- Super+Shift+r -   Restart restart i3 inplace (preserves layout/session)
+- Super+Shift+x -   Lock the screen
 
 Application:
 - ctrl+Alt+a    -   Anydesk
@@ -15,9 +25,7 @@ Application:
 - ctrl+Alt+g    -   Gimp
 - ctrl+Alt+k    -   Keepass
 - ctrl+Alt+l    -   Libreoffice writer
-- ctrl+Alt+m    -   Kodi
-- ctrl+Alt+n    -   Nemo
-- ctrl+Alt+r    -   Rofi -show run
+- ctrl+Alt+n    -   Thunar
 - ctrl+Alt+s    -   Rofi -show ssh
 - ctrl+Alt+t    -   Thunderbird
 - ctrl+Alt+u    -   WhatsApp
@@ -31,12 +39,6 @@ Hardware:
 - ctrl+Alt+h    -   Refresh hdmi sound
 - ctrl+Shift+1  -   Volume Down
 - ctrl+Shift+2  -   Volume Up
-
-
-
-
-
-
 
 
 
