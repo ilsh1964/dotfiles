@@ -1,22 +1,25 @@
 command=/usr/share/i3blocks/$BLOCK_NAME
 color=#E0E0E0
 
+[iface]
+interval=1
+
 [memory]
-label=Mem:
+label=
 interval=1
 
 [load_average]
-label=Load:
+label=
 interval=1
 
 [volume]
-label=Vol:
+label=
 instance=Master
 interval=1
 signal=10
 
 [disk]
-label=Disk:
+label=
 interval=1
 
 #[battery]
